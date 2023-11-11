@@ -28,3 +28,8 @@ document.write(A);
 document.write(M);
 document.write(25 * 4); 
 */
+
+function Get_Time_Function()
+{
+    document.getElementById("Get_Time_btn").innerHTML = Date();
+}
