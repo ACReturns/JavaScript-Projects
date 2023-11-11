@@ -13,10 +13,19 @@ function answerQuestion()
     }
 }
 
-function concat()
+function concatOriginal()
 {
+    // concat the string the original way
     var Object1 = "Autobots ";
     var Object2 = "Rollout!";
-    var motto = Object1 + Object2;
-    document.getElementById("body_area").innerHTML = motto;
+    var motto = Object1 + Object2;    
+    document.getElementById("body_area1").innerHTML = motto;
+}
+
+function concatOperator()
+{
+    // utilizing += to concat the string
+    var Object3 = "Cowa";
+    Object3 += "bunga!";
+    document.getElementById("body_area2").innerHTML = Object3;
 }
