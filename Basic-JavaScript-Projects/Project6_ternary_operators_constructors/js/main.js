@@ -11,5 +11,5 @@ function Verify_Age_Func()
     var Age, Eligible;
     Age = document.getElementById("Age").value;
     Eligible = (Age < 18) ? "You're too young" : "You're old enough";
-    document.getElementById("Eligible").innerHTML = Eligible + " to vote!";
+    document.getElementById("Eligible").innerHTML = isNaN(Age) ? "'" + Age + "'" + " is not a number" : Eligible + " to vote!";
 }
