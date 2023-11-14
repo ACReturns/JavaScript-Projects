@@ -54,3 +54,8 @@ document.write(7 > 14 || 11 < 13);
 document.write( 23 > 50 || -5 > 5);
 document.write(5 > 2 && (1 + 1) > 1);
 document.write(22 < 3 && 7 > 11);
+
+var obj1 = "Words";
+var obj2 = 25;
+var obj3 = obj1 + obj2;
+document.write(obj3)
