@@ -1,0 +1,29 @@
+/* Hide images by default & position */
+.mySlides { display: none; }
+img { vertical-align: middle; }
+
+/* Slideshow container settings */
+.slideshow-container
+{
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+/* Fading animation */
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade
+{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@media only screen and (max-width: 300px)
+{
+    .text {font-size: 11px;}
+}
