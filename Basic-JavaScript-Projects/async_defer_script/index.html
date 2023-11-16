@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Async/ Defer/ Script</title>
+    </head>
+
+    <body>
+        <!--utilizing async to run the script at the same time as the page is loaded --> 
+        <!--script src="./js/async.js" async></script-->
+        <!--script src="./js/async.js" defer></script-->
+        <p id="p1">Hello World</p>
+
+        <script>
+            A = "Always ";
+            B = "remember: ";
+            document.write(A + B);
+
+            X = "you ";
+            Y = "are ";
+            document.write(X + Y);
+
+            M = "unique, ";
+            N = "just like everyone else.";
+            document.write(M + N)
+        </script>
+    </body>
+</html>
