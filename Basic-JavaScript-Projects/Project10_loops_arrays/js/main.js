@@ -75,10 +75,52 @@ function let_Func()
 //#endregion
 
 //#region Return statement
-document.getElementById("Return").innerHTML = return_Func(document.getElementById("UserEntry").value)
-
-function return_Func(entry)
+function return_Func()
 {
-    return "Hi " + entry;
+    return document.getElementById("Return").innerHTML = "2 + 2 = " + (2 + 2);
+}
+//#endregion
+
+//#region object with properties/ method
+let phone =
+{
+    make: "Samsung",
+    model: "ZFlip 3",
+    color: "Green",
+    release: "August 11, 2021",
+    review: function()
+    {
+        return "While the " + phone.make + " " + phone.model + " was released in " + phone.release + ", it's still a worhwhile phone to have."; 
+    }
+};
+document.getElementById("Phone").innerHTML = phone.review();
+//#endregion
+
+//#region Break/ Continue
+function batteryFunc()
+{
+    for (let i = 0; i < 10; i++)
+    {
+        if (i < 2)
+        {
+            document.write("Batter low, charging...<br>");
+            continue;
+        }
+        if (i < 5)
+        {
+            document.write("Battery half charged...<br>")
+            continue;
+        }
+        if (i < 9)
+        {
+            document.write("Battery almost done charging...<br>")
+            continue;
+        }
+        if ( i >= 9)
+        {
+            document.write("Fully charged!")
+            break;
+        }
+    }
 }
 //#endregion
