@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Switch</title>
+        <title>Switch/ Canvas</title>
     </head>
 
     <body>
@@ -15,7 +15,14 @@
         <button id="Console" value="Wii" onclick="Console_Select_Func(this.value)">Wii</button>
         <button id="Console" value="NeoGeo" onclick="Console_Select_Func(this.value)">NeoGeo</button><br>
         
-        <p id="Output"></p>
+        <p id="Output"></p><br>
+
+        <p class="Foam">Green Foam</p>
+        <p class="Foam">Red Foam</p>
+        <p class="Foam">Blue Foam</p>
+        <button onclick="Foam_Function()">Get Foam Color</button><br>
+
+        <canvas id="Canvas" width="400" height="200" style="border: 5px solid black;"></canvas>
 
         <script src="./js/main.js"></script>
     </body>
