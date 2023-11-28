@@ -5,21 +5,54 @@
     margin: 10px auto;
 }
 
+#mikeylogo
+{
+    height: 30%;
+    width: 35%;
+    margin: 10px 0px 10px 80px;
+}
+
+#mikeyimg
+{
+    float: right;
+    margin: 20px -200px;
+    float: right;
+    width: 70px;
+    visibility: hidden;
+}
+
+#deliverymotto
+{
+    visibility: hidden;
+}
+
 #frmMenu
 {
-    width: 400px;
+    width: 600px;
     height: 200px;
+    margin: 0 -140px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(162, 204, 76, .3);
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 #totalPrice
 {
     width: 200px;
     height: 190px;
-    margin: 0 auto;
+    margin: 20 auto;
     float: right;
 }
 
 .left
+{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.center
 {
     width: 200px;
     height: 200px;
@@ -50,18 +83,18 @@
 
 #btnOrder
 {
-    margin: 10px 0px 0px 100px;
+    margin: 10px 0px 20px 100px;
     width: 100px;
     height: 40px;
 }
 
 body
 {
-    background-color: azure;
+    background-color: rgb(235, 243, 210);
 }
 
-h1, h3, div
+h3, div
 {
     font-family: 'Times New Roman', Times, serif;
-    color: brown;
+    color: fff;
 }
