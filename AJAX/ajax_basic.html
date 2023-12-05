@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+			<h2>Get The Latest Content:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();"/>
+			</div>
+			
+			<div class='content' id="ready">
+				<input type="button" class="button" value="Check Ready Status" id="btn_ready" onclick="checkStatus();"/>
+			</div>
+			
+			<div class='content' id="badlink">
+				<input type="button" class="button" value="Check Missing Status" id="btn_notfound" onclick="checkMissing();"/>
+			</div>
+			
+		<script type="text/javascript">
+			
+			// Step 1: setup the xml http request object
+			var ajax = new XMLHttpRequest();
+			
+			// Step 2: prepare the open AJAX request
+			ajax.open('GET', 'content.html');
+			
+			// Step 3: define the AJAX response callback methos
+			ajax.onreadystatechange = function()
+			{
+				if(ajax.readyState == 4)
+				{
+					document.getElementById('content').innerHTML = ajax.responseText;
+				}
+			}
+			
+			// Send the AJAX request for data
+			function getContent()
+			{
+				ajax.send();
+				document.getElementById('btn_content').style.display = 'none';
+			}
+			
+			#region Ready Status
+			// Step 1 initialize  the ready request object 
+			var ready = new XMLHttpRequest();
+			
+			// Step 2 open the html and get the information contained in it
+			ready.open('GET', 'readytest.html');
+			
+			// Step 3 Check if the status is OK and the readystate is finished
+			ready.onreadystatechange = function()
+			{
+				if(this.readyState == 4 && this.status == 200)
+				{
+					document.getElementById('ready').innerHTML = this.responseText;
+				}
+			}
+			
+			// Step 4 check the status after sending the request
+			function checkStatus()
+			{
+				ready.send();
+				document.getElementById('btn_ready').style.display = 'none';
+			}
+			#endregion
+			
+			#region Page not found
+			// Step 1 missed request object
+			var missing = new XMLHttpRequest();
+			
+			// Step 2 open a html file that doesnt exist
+			missing.open('GET', 'wheres_waldo.html');
+			
+			// Step 3 Check if the status is page not found 
+			missing.onreadystatechange = function()
+			{
+				if(this.readyState == 4 && this.status == 404)
+				{
+					document.getElementById('badlink').innerHTML = this.responseText;
+				}
+			}
+			
+			// Step 4 function to check the status after sending the request
+			function checkMissing()
+			{
+				missing.send();
+				document.getElementById('btn_notfound').style.display = 'none';
+			}
+			#endregion
+		</script>
+    </body>
+</html>
