@@ -44,7 +44,6 @@
 				document.getElementById('btn_content').style.display = 'none';
 			}
 			
-			#region Ready Status
 			// Step 1 initialize  the ready request object 
 			var ready = new XMLHttpRequest();
 			
@@ -66,9 +65,7 @@
 				ready.send();
 				document.getElementById('btn_ready').style.display = 'none';
 			}
-			#endregion
 			
-			#region Page not found
 			// Step 1 missed request object
 			var missing = new XMLHttpRequest();
 			
@@ -90,7 +87,6 @@
 				missing.send();
 				document.getElementById('btn_notfound').style.display = 'none';
 			}
-			#endregion
 		</script>
     </body>
 </html>
