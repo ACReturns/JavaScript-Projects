@@ -19,18 +19,22 @@
                 </body>"
             );
 
+            // change the 2 id to the color red
             $("#2").css({"color":"red"});
 
+            // clicking the 3 id hides the h1 element immediately 
             $("#3").click(function()
             {
                 $("h1").hide();
             });
 
+            // utilize the 1 id to log 'click' in the console output after clicking it
             $("#1").click(function()
             {
                 console.log("click");
             });
 
+            // utilize the 2 id to hide the h1 element slowly after clicking it
             $("#2").click(function()
             {
                 $("h1").hide("slow");
