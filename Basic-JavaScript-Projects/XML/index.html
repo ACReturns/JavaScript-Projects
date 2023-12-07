@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            // creates a text string
+            var Game = "<game>" +
+                "<title>3D Dot Hero</title>" +
+                "<platform>PS3</platform>" +
+                "<genre>Action/ RPG</genre>" + 
+                "<developer>Silicon Studios</developer>" + 
+                "</game>";
+                
+            // creates an XML DOM parser
+                XML_Parser = new DOMParser();
+
+            // creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(Game, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
