@@ -39,6 +39,9 @@
     </head>
 
     <body>
+        <div class="sticky">
+            <button>Power</button>
+        </div>
         <h1 style="font-size:8vw">Testing</h1>
         <a href="#section2">Transition to section 2</a>
         <h2 id="section1">Section 1</h1>
@@ -53,20 +56,36 @@
             <input type="submit" value="Submit">
         </form>
 
-        <button class="open-button" onclick="openForm()">Open Form</button>
-        <div class="form-popup" id="myForm">
-            <form class="form-container" action="/action_page.php">
-                <h1>Login</h1>
+        <div class="sticky">    
+            <button class="open-button" onclick="openForm()">Open Form</button>
+            <div class="form-popup" id="myForm">
+                <form class="form-container" action="/action_page.php">
+                    <h1>Login</h1>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email..." name="email" required>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email..." name="email" required>
 
-                <label for="password"><b>Password</b></label>
-                <input type="text" placeholder="Enter Password..." name="password" required>
+                    <label for="password"><b>Password</b></label>
+                    <input type="text" placeholder="Enter Password..." name="password" required>
 
-                <button type="submit" class="btn">Login</button>
-                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
+                    <button type="submit" class="btn">Login</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="slideshow">
+            <div>
+                Slide 1
+            </div>
+                
+            <div>
+                Slide 2
+            </div>
+
+            <div>
+                Slide 3
+            </div>
         </div>
 
         <a href="#section1">Transition to section 1</a>
@@ -75,5 +94,19 @@
         
         <div id="keyframe"></div>
         <img id="magnify" src="./img/magnify.png">
+
+        <script>
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function()
+        {
+            $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+        }, 3000);
+        </script>
     </body>
 </html>
