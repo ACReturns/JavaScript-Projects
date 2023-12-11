@@ -1,11 +1,10 @@
 /* Center align footer content */
 footer
 {
-    position: absolute;
+    position: sticky;
+    margin-top: 100%;
     bottom: 0;
-    left: 50%;
-    z-index: 10;
-    padding-bottom: 2%;
+    border: 1px solid #000;
 }
 
 html
