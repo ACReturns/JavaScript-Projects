@@ -40,3 +40,8 @@ li
     list-style: none;
     margin: 0;
 }
+
+.remove
+{
+    padding-bottom: 5px;
+}
