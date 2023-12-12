@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <p id="edit" ondblclick="changeFunc()">The walls in the mall are totally totally</p>
+
+        <script>
+            function changeFunc()
+            {
+                if (document.getElementById('edit').style.color == "green")
+                {
+                    document.getElementById('edit').style.color = "black";
+                }
+                else
+                {
+                    document.getElementById('edit').style.color = "green";
+                }
+                
+            }
+        </script>
+    </body>
+</html>
