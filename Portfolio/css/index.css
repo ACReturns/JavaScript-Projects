@@ -1,0 +1,53 @@
+/***** General Styling *****/
+/* Affects entire document */
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0%; /* Ensures our site displays all the way to the edge of the browser screen */
+    opacity: 1; /* This & transition affect the page loading fade in effect */
+    transition: 3s opacity;
+    letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
+    font-family: Avant Garde, Helvetica;
+    font-size: 1.5vw;
+    overflow-x: hidden; /* Prevent horizontal scroll bar from appearing when the quote is hovered over */ /* TODO Test since this is for the quote section */
+    user-select: none; /* Prevents the user from highlighting text on the page */
+}
+
+body.fade-out
+{
+    opacity: .1; /* Sets the level of opacity at the start of loading the page */
+}
+
+h1
+{
+    text-transform: uppercase; /* Capitalize all h1 headings */
+    font-family: "Trebuchet MS", Optima;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+/* H1 element hover effect */
+h1:hover 
+{
+    filter: grayscale(5%); /* Adds a light grey filter to the h1 heading when hovered over */
+    transform: scale(1.1); /* When hovering over the h1 element increase the size by 1.1 */
+    transition: transform 1s; /* This causes the transformation to last 1 second */
+}
+
+/* Styling for the Portfolio Title Text */
+.white-text
+{
+    color: #fff; /* Portfolio Title text color */
+    padding-top: 10vh; /* Adds padding equal to 10% of the viewport height to the top of the Portfolio Title Text */
+}
+
+/* Paragraph elements */
+p
+{
+    
+}
