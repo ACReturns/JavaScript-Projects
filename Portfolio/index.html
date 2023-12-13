@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width"/>
+        <title>Don Smith: Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#Slideshow">Slideshow</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        </div>
+
+        <!-- Home/ Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="welcome_video">
+                <source src="./img/video/welcome.mp4">
+                <!-- Display this if the video fails to play -->
+                Your browser doesn't support HTML5 videos
+            </video>
+        </div>
+
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Don Smith's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    My name is Don Smith, welcome to my portfolio website. On it, I will both show and tell you about my background and experience.<br>
+                    Thank you for checking out my page and I hope we can connect in the future! 
+                </p>
+            </strong>
+        </div>
+
+        <!-- Slideshow -->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!-- Slides -->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/Picture_of_Me.jpg" alt="My Picture">
+                        <div class="text">I'm available to assist you on your next big project!
+                            <br>I'm a full-stack software developer trained in:</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS and JS logos">
+                        <div class="text">HTML, CSS, JavaScript</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/Python.png" alt="Python logo">
+                        <div class="text">Python</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/C_Sharp_and_Dot_NET.png" alt="C# logo">
+                        <div class="text">C#, .NET Framework, ASP.NET, MVC</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/SQL_and_Database.jpg" alt="SQL logo">
+                        <div class="text">Back end development, databases and SQL</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./img/Contact_Me.jpg" alt="Contact me image">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me</a></div>
+                    </div>
+
+                    <!-- Next/ Previous buttons -->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div><br>
+
+                <!-- Slideshow dots, alternate means for the end user to navigate thorough the slideshow -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About section -->
+        <!-- TODO Update images in this section -->
+        <div class="Row" id="About">
+            <!-- Left Column -->
+            <div class="Column_2">
+                <img src="./img/coding_icon.png" alt="Figure out image replacement">
+            </div>
+            <!-- Right Column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I'm a software developer who is always up for a challenge and loves to continue to grow in my field.<br> 
+                    With a little girl to be a role model for, I enjoy spending time with my family and shaping her into an amazing person.<br>
+                    I'm progressing through the Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a><br>
+                    and trained in the following web & programming langrages: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
+                    I'm a full-stack developer and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact</a> me below. 
+                </p>
+            </div>
+        </div>
+
+        <!-- Github section -->
+        <div class="Row" id="Github">
+            <!-- Left Column -->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p>
+                    You can view my coding projects on my Github profile here:<br>
+                    <p class="center"><a href="https://github.com/ACReturns" target="_blank">Don Smith's Github</a></p>
+                </p>
+            </div>
+            <!-- Right Column -->
+            <div class="Column_2">
+                <a href="https://github.com/ACReturns" target="_blank"><img src="./img/GitHub.png"></a>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+    </body>
+</html>
