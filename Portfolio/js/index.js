@@ -53,6 +53,8 @@ function closeForm()
 // This code will close the contact form when the user clicks off of it.
 document.addEventListener("click", function(event)
 {
+    /* After creating a event listener, we check here if the Cancel button is hit OR that the click happens outside of the contact 
+    form and that it doesnt happen on any element within the contact form. If so then we call the closeForm() function */
     if (event.target.matches(".cancel") || !event.target.closest(".form-popup") && !event.target.closest(".Pop_Up_Button") && !event.target.closest(".contact"))
     {
         closeForm()
