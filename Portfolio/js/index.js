@@ -2,6 +2,12 @@
 var slideIndex = 1;
 showSlides(slideIndex);
 
+// This function changes the slide when the left/ right arrow is pressed
+function plusSlides(n)
+{
+    showSlides(slideIndex += n);
+}
+
 // This function controls the next/ previous controls when the arrows are clicked
 function currentSlide(n)
 {
@@ -47,7 +53,7 @@ function openForm()
 
 function closeForm()
 {
-    document.getElementById("myForm").style.display = "none;"
+    document.getElementById("myForm").style.display = "none";
 }
 
 // This code will close the contact form when the user clicks off of it.

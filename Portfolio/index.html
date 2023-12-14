@@ -13,13 +13,13 @@
             <a class="active" href="#Home">Home</a>
             <a href="#Slideshow">Slideshow</a>
             <a href="#About">About</a>
-            <a href="#Github">Github</a>
+            <a href="#Profiles">Profiles</a>
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!-- Home/ Background video -->
         <div id="Home">
-            <video autoplay muted loop id="welcome_video">
+            <video autoplay muted loop id="Welcome_Video">
                 <source src="./img/video/welcome.mp4">
                 <!-- Display this if the video fails to play -->
                 Your browser doesn't support HTML5 videos
@@ -44,7 +44,7 @@
                     <!-- Slides -->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="./img/Picture_of_Me.jpg" alt="My Picture">
-                        <div class="text">I'm available to assist you on your next big project!
+                        <div class="text">I'm available to assist you on your project!
                             <br>I'm a full-stack software developer trained in:</div>
                     </div>
 
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="./img/Contact_Me.jpg" alt="Contact me image">
+                        <img class="Slideshow_Images" src="./img/Contact_Me.png" alt="Contact me image">
                         <div class="text"><a class="white-text contact" onclick="openForm()">Contact me</a></div>
                     </div>
 
@@ -95,34 +95,37 @@
         <div class="Row" id="About">
             <!-- Left Column -->
             <div class="Column_2">
-                <img src="./img/coding_icon.png" alt="Figure out image replacement">
+                <img src="./img/About_Me.png" alt="About Me image">
             </div>
             <!-- Right Column -->
             <div class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I'm a software developer who is always up for a challenge and loves to continue to grow in my field.<br> 
-                    With a little girl to be a role model for, I enjoy spending time with my family and shaping her into an amazing person.<br>
-                    I'm progressing through the Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a><br>
-                    and trained in the following web & programming langrages: HTML, CSS, JavaScript, SQL, Python, C# and more.<br>
+                    I'm a software developer who is always up for a challenge and loves to continue to grow in my field. 
+                    With a little girl to be a role model for, I enjoy spending time with my family and shaping her into an amazing young lady.<br>
+                    I'm progressing through the Game Developer Boot Camp at <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a>
+                    and trained in the following web & programming langrages: HTML, CSS, JavaScript, SQL, Python, C# and more.
                     I'm a full-stack developer and would love to work with you on your projects. <a onclick="openForm()" class="contact">Contact</a> me below. 
                 </p>
             </div>
         </div>
 
         <!-- Github section -->
-        <div class="Row" id="Github">
+        <div class="Row" id="Profiles">
             <!-- Left Column -->
             <div class="Column_1">
-                <h1>Github</h1>
+                <h1>Profiles</h1>
                 <p>
-                    You can view my coding projects on my Github profile here:<br>
-                    <p class="center"><a href="https://github.com/ACReturns" target="_blank">Don Smith's Github</a></p>
+                    You can view my professional profiles here:<br>
+                    <p class="center"> Coding projects on my Github profile: <a href="https://github.com/ACReturns" target="_blank">Don Smith's Github</a></p>
+                    <br>
+                    <p class="center">My LinkedIN profile: <a href="https://www.linkedin.com/in/donald-smith-67b604a/s" target="_blank">Don Smith's LinkedIN</a></p>
                 </p>
             </div>
             <!-- Right Column -->
             <div class="Column_2">
-                <a href="https://github.com/ACReturns" target="_blank"><img src="./img/GitHub.png"></a>
+                <a href="https://github.com/ACReturns" target="_blank"><img src="./img/GitHub.png" alt="GitHub Logo"></a>
+                <a href="https://www.linkedin.com/in/donald-smith-67b604a/" target="_blank"><img src="./img/LinkedIn.png" alt="LinkedIn Logo"></a>
             </div>
         </div>
 
@@ -142,7 +145,7 @@
                         <input type="text" placeholder="Enter your message here" name="message">
 
                     <button type="submit" class="btn">Submit</button>
-                    <button type="button" class="btn_cancel" onclick="closeForm()">Close</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                 </form>
             </div>
         </div>
