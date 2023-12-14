@@ -1,5 +1,5 @@
 # JavaScript-Projects
- All HTML/ CSS projects are stored here for the course
+ All JavaScript projects are stored here for the course
 
 Table of Contents
 1. [Introduction](#Introduction)
